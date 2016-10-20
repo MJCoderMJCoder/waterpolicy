@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="12dp" >
+
+    <RelativeLayout
+        android:id="@+id/topTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/loginBG" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/laws"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:onClick="back"
+            android:padding="10dp"
+            android:src="@drawable/back" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/lawsTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/topTitle"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:text="@string/laws"
+        android:textSize="21sp" />
+
+    <TextView
+        android:id="@+id/releaseTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/lawsTitle"
+        android:layout_marginTop="25dp"
+        android:paddingRight="10dp"
+        android:text="@string/date"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/releaseTimeHint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/releaseTime"
+        android:layout_toLeftOf="@+id/releaseTime"
+        android:text="@string/releaseDate"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/lawsSubject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/releaseTime"
+        android:layout_alignParentLeft="true"
+        android:paddingLeft="10dp"
+        android:text="@string/subject"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/lawsSubjectClass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/releaseTime"
+        android:layout_toLeftOf="@+id/releaseTimeHint"
+        android:layout_toRightOf="@+id/lawsSubject"
+        android:singleLine="true"
+        android:text="@string/laws"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/lawsContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lawsSubjectClass"
+        android:layout_marginTop="25dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="@string/laws"
+        android:textSize="18sp" />
+
+</RelativeLayout>

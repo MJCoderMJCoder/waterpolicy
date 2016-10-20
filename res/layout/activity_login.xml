@@ -1,0 +1,132 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/loginBG"
+    android:scrollbars="none"
+    tools:context="com.lzf.waterpolicy.LoginActivity" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="10dp"
+        android:paddingLeft="35dp"
+        android:paddingRight="35dp" >
+
+        <ImageView
+            android:id="@+id/loginLogo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="40dp"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/login_logo" />
+
+        <TextView
+            android:id="@+id/usernameTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/loginLogo"
+            android:layout_marginBottom="10dp"
+            android:paddingBottom="10dp"
+            android:text="@string/username"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/usernameET"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/loginLogo"
+            android:layout_marginBottom="10dp"
+            android:layout_toRightOf="@+id/usernameTV"
+            android:background="@null"
+            android:drawableBottom="@drawable/white_line"
+            android:ellipsize="middle"
+            android:paddingBottom="10dp"
+            android:paddingLeft="5dp"
+            android:singleLine="true"
+            android:text="@string/un"
+            android:textSize="18sp" >
+
+            <requestFocus />
+        </EditText>
+
+        <TextView
+            android:id="@+id/passwordTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/usernameTV"
+            android:layout_below="@+id/usernameTV"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="@string/password"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/passwordET"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/usernameET"
+            android:layout_below="@+id/usernameET"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@null"
+            android:drawableBottom="@drawable/white_line"
+            android:ellipsize="middle"
+            android:inputType="textPassword"
+            android:paddingBottom="10dp"
+            android:paddingLeft="5dp"
+            android:paddingTop="10dp"
+            android:singleLine="true"
+            android:text="@string/pw"
+            android:textSize="18sp" >
+        </EditText>
+
+        <TextView
+            android:id="@+id/ipTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/usernameTV"
+            android:layout_below="@+id/passwordTV"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="@string/ip"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/ipET"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/usernameET"
+            android:layout_below="@+id/passwordET"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@null"
+            android:drawableBottom="@drawable/white_line"
+            android:ellipsize="middle"
+            android:paddingBottom="10dp"
+            android:paddingLeft="5dp"
+            android:paddingTop="10dp"
+            android:singleLine="true"
+            android:text="@string/http"
+            android:textSize="18sp" >
+        </EditText>
+
+        <ImageView
+            android:id="@+id/login"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_below="@+id/ipTV"
+            android:layout_marginTop="35dp"
+            android:src="@drawable/login_btn" />
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/caseNameTV"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="@string/caseName"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/caseNameET"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignTop="@+id/caseNameTV"
+            android:layout_toRightOf="@+id/caseNameTV"
+            android:background="@drawable/edit_bg"
+            android:ellipsize="middle"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:textSize="18sp" >
+
+            <requestFocus />
+        </EditText>
+
+        <TextView
+            android:id="@+id/caseClassTV"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignLeft="@+id/caseNameTV"
+            android:layout_below="@+id/caseNameTV"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="@string/caseClass"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/caseClassET"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignTop="@+id/caseClassTV"
+            android:layout_toRightOf="@+id/caseClassTV"
+            android:background="@drawable/edit_bg"
+            android:drawableRight="@drawable/drop_down"
+            android:editable="false"
+            android:ellipsize="middle"
+            android:hint="@string/selectCaseType"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:textSize="18sp" >
+        </EditText>
+
+        <TextView
+            android:id="@+id/reportPersonNameTV"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignLeft="@+id/caseClassTV"
+            android:layout_below="@+id/caseClassTV"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="@string/reportPersonName"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/reportPersonNameET"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignTop="@+id/reportPersonNameTV"
+            android:layout_toRightOf="@+id/reportPersonNameTV"
+            android:background="@drawable/edit_bg"
+            android:ellipsize="middle"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:textSize="18sp" >
+        </EditText>
+
+        <TextView
+            android:id="@+id/siteTV"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignLeft="@+id/reportPersonNameTV"
+            android:layout_below="@+id/reportPersonNameTV"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="@string/site"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/siteET"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignTop="@+id/siteTV"
+            android:layout_toRightOf="@+id/siteTV"
+            android:background="@drawable/edit_bg"
+            android:editable="false"
+            android:ellipsize="middle"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:textSize="18sp" >
+        </EditText>
+
+        <TextView
+            android:id="@+id/lawAreaTV"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignLeft="@+id/caseNameTV"
+            android:layout_below="@+id/siteTV"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="@string/lawArea"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/lawAreaET"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignTop="@+id/lawAreaTV"
+            android:layout_toRightOf="@+id/lawAreaTV"
+            android:background="@drawable/edit_bg"
+            android:drawableRight="@drawable/drop_down"
+            android:editable="false"
+            android:ellipsize="middle"
+            android:hint="@string/subjectClass"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:textSize="18sp" >
+        </EditText>
+
+        <TextView
+            android:id="@+id/timeTV"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignLeft="@+id/siteTV"
+            android:layout_below="@+id/lawAreaTV"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="@string/time"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/timeET"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignTop="@+id/timeTV"
+            android:layout_toRightOf="@+id/timeTV"
+            android:background="@drawable/edit_bg"
+            android:editable="false"
+            android:ellipsize="middle"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:textSize="18sp" >
+        </EditText>
+
+        <TextView
+            android:id="@+id/photoTV"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignLeft="@+id/timeTV"
+            android:layout_below="@+id/timeTV"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="@string/photo"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/photoET"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignTop="@+id/photoTV"
+            android:layout_toRightOf="@+id/photoTV"
+            android:background="@drawable/edit_bg"
+            android:editable="false"
+            android:ellipsize="middle"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:textSize="18sp" >
+        </EditText>
+
+        <TextView
+            android:id="@+id/videoTV"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignLeft="@+id/photoTV"
+            android:layout_below="@+id/photoTV"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="@string/video"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/videoET"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignTop="@+id/videoTV"
+            android:layout_toRightOf="@+id/videoTV"
+            android:background="@drawable/edit_bg"
+            android:editable="false"
+            android:ellipsize="middle"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:textSize="18sp" >
+        </EditText>
+
+        <TextView
+            android:id="@+id/briefTV"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignLeft="@+id/videoTV"
+            android:layout_below="@+id/videoTV"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="@string/brief"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/briefET"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_alignTop="@+id/briefTV"
+            android:layout_toRightOf="@+id/briefTV"
+            android:background="@drawable/edit_bg"
+            android:gravity="top"
+            android:hint="@string/briefWords"
+            android:inputType="textMultiLine"
+            android:maxLength="350"
+            android:padding="5dp"
+            android:textSize="18sp" >
+        </EditText>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/briefET"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/submit"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_bg"
+                android:text="@string/submit"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/cancel"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_bg"
+                android:onClick="cancel"
+                android:text="@string/cancel"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</ScrollView>

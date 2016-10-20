@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="un">001</string>
+    <string name="pw">000000</string>
+    <string name="app_name">水政执法</string>
+    <string name="action_settings">Settings</string>
+    <string name="username">用户名：</string>
+    <string name="password">密&#160;&#160;&#160;&#160;码：</string>
+    <string name="ip">IP地址：</string>
+    <string name="http">192.168.2.89:4001</string>
+    <string name="default_title">水政移动执法平台</string>
+    <string name="chargeSheet">案件记录</string>
+    <string name="notice">系统公告</string>
+    <string name="laws">法律法规</string>
+    <string name="systemSet">系统设置</string>
+    <string name="caseName">案件名称：</string>
+    <string name="caseClass">案件类型：</string>
+    <string name="reportPersonName">上报人姓名：</string>
+    <string name="site">案发地点：</string>
+    <string name="time">案发时间：</string>
+    <string name="photo">上传照片：</string>
+    <string name="video">视频上传：</string>
+    <string name="brief">案情简要：</string>
+    <string name="briefWords">300字左右...</string>
+    <string name="submit">提&#160;&#160;&#160;&#160;交</string>
+    <string name="cancel">取&#160;&#160;&#160;&#160;消</string>
+    <string name="selectCaseType">选择案件类型</string>
+    <string name="allImg">所有图片</string>
+    <string name="dropDown">◢</string>
+    <string name="query">查&#160;&#160;&#160;&#160;询</string>
+    <string name="subjectClass">请选择</string>
+    <string name="help">操作使用手册</string>
+    <string name="update">检查更新&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</string>
+    <string name="date">2016/10/10</string>
+    <string name="subject">主题分类：</string>
+    <string name="title">标题查询：</string>
+    <string name="titleHint">输入您想要查询的字段</string>
+    <string name="releaseDate">发布时间：</string>
+    <string name="lawArea">执法区域：</string>
+    <string name="to">~</string>
+    <string name="caseClosed">已结案</string>
+    <string name="noAccept">未受理</string>
+    <string name="processing">正在处理</string>
+    <string name="caseIngHint">案件的处理情况：</string>
+    <string name="noticeType">公告类型：</string>
+    <string name="map">点击地图上相应位置来选择案发地点</string>
+    <string name="loading">加载中</string>
+    <string name="help01">1. 点击“水政执法”APP进入登陆页面。</string>
+    <string name="help02">2. 输入正确的用户名和密码（来源于水政执法平台）、IP地址（IP地址格式如上图所示）后点击“登陆”按钮进入主页。</string>
+    <string name="help03">3. 主页下方是菜单栏，您可以根据提示进行下一步操作或根据您的需求直接点击相应的菜单按钮进行操作。\n\t\t如果您需要上报案件，则可以通过点击 “ + ” 按钮进入该界面进行操作。</string>
+    <string name="help04">4. 在上报案件界面您需要填写除“视频上传”外的所有信息，其中“上传照片”和“视频上传”将直接调用您系统内的图片和视频，所以无需您手动填写，轻轻点击对应输入框并选择所要上传的图片和视频即可。\n\t\t此外，“案发地点”默认使用您当前的位置信息，如果需要修改，可点击“案发地点”输入框进入地图界面；您可以通过点击地图上相应位置来选择案发地点，之后按返回键即可再次进入上报案件界面，此时，您的“案发地点”将会进行自动更新。</string>
+    <string name="help05">5. 案件信息填写完后，点击页面下方的“提交”按钮即可向服务器上传数据（如果您的屏幕较小以致于未能显示“提交”按钮或是其他界面，则可通过上拉来查看更多）。\n\t\t当您要查看“法律法规”时，可通过点击“法律法规”按钮进入该界面（默认将显示10条法律法规，上拉可加载更多）；此外您可以直接点击“查询”按钮来查询系统的法律法规，也可以按主题和发布时间来查询相关法律法规。</string>
+    <string name="help06">6. 上图中“查询”按钮下方的是相关法律法规列表，通过点击各法律法规项，即可进入该项的详情页。其他功能与上文中所提到的类似，如有更多疑问，请联系我们。\n\t\t望您使用愉快。</string>
+    <string name="phoneNotice">手机公告</string>
+    <string name="photograph">拍照/拍摄视频</string>
+    <string name="gallery">从本地库选择</string>
+    <string name="cancelPG">取消</string>
+
+</resources>

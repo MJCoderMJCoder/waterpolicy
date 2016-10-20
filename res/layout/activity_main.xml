@@ -1,0 +1,208 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.lzf.waterpolicy.MainActivity" >
+
+    <RelativeLayout
+        android:id="@+id/topTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/loginBG" >
+
+        <TextView
+            android:id="@+id/topTitleTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/default_title"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/search"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_alignParentRight="true"
+            android:onClick="back"
+            android:padding="10dp"
+            android:src="@drawable/search"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/bottomMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/loginBG"
+        android:paddingBottom="4dp"
+        android:paddingTop="4dp" >
+
+        <RelativeLayout
+            android:id="@+id/chargeSheetRL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="1dp" >
+
+            <ImageView
+                android:id="@+id/chargeSheetIV"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:paddingBottom="5dp"
+                android:src="@drawable/charge_sheet_selector" />
+
+            <TextView
+                android:id="@+id/chargeSheetTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/chargeSheetIV"
+                android:gravity="center"
+                android:text="@string/chargeSheet"
+                android:textColor="@color/white"
+                android:textSize="13sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/noticeRL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="1dp" >
+
+            <ImageView
+                android:id="@+id/noticeIV"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:paddingBottom="5dp"
+                android:src="@drawable/notice_selector" />
+
+            <TextView
+                android:id="@+id/noticeTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/noticeIV"
+                android:gravity="center"
+                android:text="@string/notice"
+                android:textColor="@color/white"
+                android:textSize="13sp" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/report"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:padding="1dp"
+            android:src="@drawable/report" />
+
+        <RelativeLayout
+            android:id="@+id/lawsRL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="1dp" >
+
+            <ImageView
+                android:id="@+id/lawsIV"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:paddingBottom="5dp"
+                android:src="@drawable/laws_selector" />
+
+            <TextView
+                android:id="@+id/lawsTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lawsIV"
+                android:gravity="center"
+                android:text="@string/laws"
+                android:textColor="@color/white"
+                android:textSize="13sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/systemSetRL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="1dp" >
+
+            <ImageView
+                android:id="@+id/systemSetIV"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:paddingBottom="5dp"
+                android:src="@drawable/system_set_selector" />
+
+            <TextView
+                android:id="@+id/systemSetTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/systemSetIV"
+                android:gravity="center"
+                android:text="@string/systemSet"
+                android:textColor="@color/white"
+                android:textSize="13sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/centerContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottomMenu"
+        android:layout_below="@+id/topTitle" >
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/multimedia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/photograph"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:background="@drawable/myself_bg"
+            android:gravity="center"
+            android:text="@string/photograph"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/gallery"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="-5dp"
+            android:layout_weight="1"
+            android:background="@drawable/myself_bg"
+            android:gravity="center"
+            android:text="@string/gallery"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/cancelPG"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="-5dp"
+            android:layout_weight="1"
+            android:background="@drawable/myself_bg"
+            android:gravity="center"
+            android:text="@string/cancelPG"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</RelativeLayout>

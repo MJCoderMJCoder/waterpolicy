@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/topMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" >
+
+        <TextView
+            android:id="@+id/caseClosed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:drawableBottom="@drawable/charge_sheet_selector3"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="@string/caseClosed"
+            android:textColor="@drawable/color_selector"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/noAccept "
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:drawableBottom="@drawable/charge_sheet_selector3"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="@string/noAccept"
+            android:textColor="@drawable/color_selector"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/processing"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:drawableBottom="@drawable/charge_sheet_selector3"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="@string/processing"
+            android:textColor="@drawable/color_selector"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/topMenu"
+        android:divider="@null"
+        android:dividerHeight="20dp"
+        android:padding="15dp"
+        android:scrollbars="none" >
+    </ListView>
+
+</RelativeLayout>

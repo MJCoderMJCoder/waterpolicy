@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="7dp" >
+
+    <TextView
+        android:id="@+id/subjectClassTV"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginBottom="7dp"
+        android:layout_marginTop="7dp"
+        android:gravity="center"
+        android:text="@string/subject"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/subjectClassET"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_alignTop="@+id/subjectClassTV"
+        android:layout_toRightOf="@+id/subjectClassTV"
+        android:background="@drawable/edit_bg"
+        android:drawableRight="@drawable/drop_down"
+        android:editable="false"
+        android:ellipsize="middle"
+        android:hint="@string/subjectClass"
+        android:padding="5dp"
+        android:singleLine="true"
+        android:textSize="18sp" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/timeTV"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_alignLeft="@+id/subjectClassTV"
+        android:layout_below="@+id/subjectClassTV"
+        android:layout_marginBottom="7dp"
+        android:layout_marginTop="7dp"
+        android:gravity="center"
+        android:text="@string/releaseDate"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:id="@+id/time"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_alignTop="@+id/timeTV"
+        android:layout_toRightOf="@+id/timeTV"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/releaseTime"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_weight="2"
+            android:background="@drawable/edit_bg"
+            android:editable="false"
+            android:ellipsize="middle"
+            android:hint="@string/date"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:textSize="18sp" >
+        </EditText>
+
+        <TextView
+            android:id="@+id/to"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/to"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/releaseTime0"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_weight="2"
+            android:background="@drawable/edit_bg"
+            android:editable="false"
+            android:ellipsize="middle"
+            android:hint="@string/date"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:textSize="18sp" >
+        </EditText>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/titleTV"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_alignLeft="@+id/timeTV"
+        android:layout_below="@+id/timeTV"
+        android:layout_marginBottom="7dp"
+        android:layout_marginTop="7dp"
+        android:gravity="center"
+        android:text="@string/title"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/titleET"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_alignTop="@+id/titleTV"
+        android:layout_toRightOf="@+id/titleTV"
+        android:background="@drawable/edit_bg"
+        android:ellipsize="middle"
+        android:hint="@string/titleHint"
+        android:padding="5dp"
+        android:singleLine="true"
+        android:textSize="18sp" >
+    </EditText>
+
+    <Button
+        android:id="@+id/query"
+        android:layout_width="165dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/titleET"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/btn_bg"
+        android:text="@string/query"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <ListView
+        android:id="@+id/laws"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/query"
+        android:layout_marginTop="15dp"
+        android:footerDividersEnabled="false"
+        android:scrollbars="none" >
+    </ListView>
+
+</RelativeLayout>

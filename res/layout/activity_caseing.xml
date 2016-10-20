@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/topTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/loginBG" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/laws"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:onClick="back"
+            android:padding="10dp"
+            android:src="@drawable/back" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/topTitle"
+        android:scrollbars="none" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp" >
+
+            <TextView
+                android:id="@+id/caseIngHint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:text="@string/caseIngHint"
+                android:textSize="17sp" />
+
+            <ImageView
+                android:id="@+id/caseingImg"
+                android:layout_width="wrap_content"
+                android:layout_height="465dp"
+                android:layout_below="@+id/caseIngHint"
+                android:layout_marginLeft="105dp"
+                android:layout_marginTop="30dp"
+                android:src="@drawable/a" />
+
+            <TextView
+                android:id="@+id/a"
+                android:layout_width="wrap_content"
+                android:layout_height="21dp"
+                android:layout_alignTop="@+id/caseingImg"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@+id/caseingImg"
+                android:gravity="top"
+                android:text="受理"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/b"
+                android:layout_width="wrap_content"
+                android:layout_height="21dp"
+                android:layout_alignLeft="@+id/a"
+                android:layout_below="@+id/a"
+                android:layout_marginTop="42dp"
+                android:gravity="top"
+                android:text="立案"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/c"
+                android:layout_width="wrap_content"
+                android:layout_height="21dp"
+                android:layout_alignLeft="@+id/b"
+                android:layout_below="@+id/b"
+                android:layout_marginTop="42dp"
+                android:gravity="top"
+                android:text="不立案"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/d"
+                android:layout_width="wrap_content"
+                android:layout_height="21dp"
+                android:layout_alignLeft="@+id/c"
+                android:layout_below="@+id/c"
+                android:layout_marginTop="42dp"
+                android:gravity="top"
+                android:text="调查通过"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/e"
+                android:layout_width="wrap_content"
+                android:layout_height="21dp"
+                android:layout_alignLeft="@+id/d"
+                android:layout_below="@+id/d"
+                android:layout_marginTop="42dp"
+                android:gravity="top"
+                android:text="撤销立案"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/f"
+                android:layout_width="wrap_content"
+                android:layout_height="21dp"
+                android:layout_alignLeft="@+id/e"
+                android:layout_below="@+id/e"
+                android:layout_marginTop="42dp"
+                android:gravity="top"
+                android:text="行政处罚审批"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/g"
+                android:layout_width="wrap_content"
+                android:layout_height="21dp"
+                android:layout_alignLeft="@+id/f"
+                android:layout_below="@+id/f"
+                android:layout_marginTop="42dp"
+                android:gravity="top"
+                android:text="听证"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/h"
+                android:layout_width="wrap_content"
+                android:layout_height="21dp"
+                android:layout_alignLeft="@+id/g"
+                android:layout_below="@+id/g"
+                android:layout_marginTop="42dp"
+                android:gravity="top"
+                android:text="结案审批"
+                android:textSize="16sp" />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>
