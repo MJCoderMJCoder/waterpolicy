@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.lzf.waterpolicy"
-    android:versionCode="1"
-    android:versionName="1.0" >
+    android:versionCode="6"
+    android:versionName="1.6" >
 
     <uses-sdk
         android:minSdkVersion="8"
@@ -25,8 +25,18 @@
     <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
     <!-- 用于读取手机当前的状态 -->
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- =======================================摄像开始================================= -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <!-- =======================================摄像结束================================= -->
 
     <application
+        android:name="com.lzf.WaterpolicyApp"
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
@@ -36,13 +46,16 @@
         <meta-data
             android:name="com.amap.api.v2.apikey"
             android:value="e89bef44b82abb233119a6b528c9159f" />
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="ERixfpGbDbYx9jf7GG06KQ5g4vv0QMsX" />
 
         <service android:name="com.amap.api.location.APSService" >
         </service>
         <!-- 定位功能结束 -->
 
         <activity
-            android:name=".LoginActivity"
+            android:name=".StartActivity"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.Light.NoTitleBar" >
@@ -50,6 +63,17 @@
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+            <intent-filter>
+                <action android:name="com.lzf.waterpolicy.LoginActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
         <activity
@@ -136,6 +160,28 @@
             android:theme="@android:style/Theme.Light.NoTitleBar" >
             <intent-filter>
                 <action android:name="com.lzf.waterpolicy.HelpActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".QueryActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+            <intent-filter>
+                <action android:name="com.lzf.waterpolicy.QueryActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ResultActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+            <intent-filter>
+                <action android:name="com.lzf.waterpolicy.ResultActivity" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="15dp" >
+
+    <RelativeLayout
+        android:id="@+id/helpRL"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/btn_bg"
+        android:gravity="center" >
+
+        <ImageView
+            android:id="@+id/helpIV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:src="@drawable/help" />
+
+        <TextView
+            android:id="@+id/helpTV"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/helpIV"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="@string/help"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/updateRL"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/helpRL"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_bg"
+        android:gravity="center" >
+
+        <ImageView
+            android:id="@+id/updateIV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:src="@drawable/update" />
+
+        <TextView
+            android:id="@+id/updateTV"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/updateIV"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="@string/update"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+</RelativeLayout>
